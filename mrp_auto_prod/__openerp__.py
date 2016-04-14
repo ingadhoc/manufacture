@@ -26,7 +26,10 @@
     'website':  'www.adhoc.com.ar',
     'license':  'AGPL-3',
     'description': """
-Para probar instalar tambien "sale" y "procurement_jit_stock"
+MRP auto production
+==================
+Autoproduce when delivering products to be produced
+To try, please also install "sale" and "procurement_jit_stock"
 """,
     'depends': [
         'mrp',
