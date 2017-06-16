@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+##############################################################################
+# For copyright and license notices, see __openerp__.py file in module root
+# directory
+##############################################################################
+from openerp import models, api
+
+
+class StockMoveConsume(models.Model):
+
+    _inherit = 'stock.move.consume'
+
+    @api.multi
+    @api.constrains('restrict_lot_id')
+    def validate_quantity(self):
+        for rec in self:
+            if rec.restrict_lot_id and rec.location_id:
+                rec.restrict_lot_id.validate_lot_quantity(
+                    rec.product_qty, rec.location_id.id)
