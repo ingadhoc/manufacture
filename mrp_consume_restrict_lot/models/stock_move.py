@@ -16,4 +16,6 @@ class StockMoveConsume(models.Model):
         for rec in self:
             if rec.restrict_lot_id and rec.location_id:
                 rec.restrict_lot_id.validate_lot_quantity(
-                    rec.product_qty, rec.location_id.id)
+                    rec.product_qty, [
+                        ('location_id', '=', rec.location_id.id),
+                        ('reservation_id', '=', False)])
