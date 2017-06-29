@@ -6,7 +6,7 @@
 from openerp import models, api
 
 
-class StockMoveConsume(models.Model):
+class StockMoveConsume(models.TransientModel):
 
     _inherit = 'stock.move.consume'
 
