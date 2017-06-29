@@ -6,7 +6,7 @@
 from openerp import models, api
 
 
-class MrpProductProduce(models.Model):
+class MrpProductProduce(models.TransientModel):
 
     _inherit = 'mrp.product.produce'
 
