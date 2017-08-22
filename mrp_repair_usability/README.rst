@@ -6,7 +6,7 @@
 MRP Repair Usability
 ====================
 
-#. Add a validation in the wizard "create Invoice" for a repair product.
+#. Add a validation in the wizard "create Invoice" for a repaired product
 
 Installation
 ============
