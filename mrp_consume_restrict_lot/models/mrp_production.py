@@ -17,7 +17,7 @@ class MrpProductProduce(models.TransientModel):
             for line in rec.consume_lines:
                 location_id = self._context.get('location_src', False)
                 if location_id and line.lot_id:
-                    rec.lot_id.validate_lot_quantity(
+                    line.lot_id.validate_lot_quantity(
                         line.product_qty, [
                             ('location_id', '=', location_id),
                             ('reservation_id', '=', False)])
