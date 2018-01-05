@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-====================
-MRP Repair Usability
-====================
+=============
+MRP Usability
+=============
 
-#. Add a validation in the wizard "create Invoice" for a repaired product.
+#. Backport of improove from v11 where date_planned is editable (for eg. to allow drag and drop on calendar view)
 
 Installation
 ============

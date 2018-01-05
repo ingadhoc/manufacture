@@ -19,18 +19,17 @@
 #
 ##############################################################################
 {
-    'name': 'MRP Repair Usability',
+    'name': 'MRP Usability',
     'version': '9.0.1.0.0',
     'category': 'Warehouse Management',
     'sequence': 14,
-    'summary': '',
     'author': 'ADHOC SA,Odoo Community Association (OCA)',
     'website': 'www.adhoc.com.ar',
     'license': 'AGPL-3',
     'images': [
     ],
     'depends': [
-        'mrp_repair',
+        'mrp',
     ],
     'data': [
     ],
