@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_mrp_product_produce_wizard" model="ir.ui.view">
+        <field name="name">mrp product produce</field>
+        <field name="model">mrp.product.produce</field>
+        <field name="inherit_id" ref="mrp.view_mrp_product_produce_wizard"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='produce_line_ids']//field[@name='lot_id']" position="attributes">
+                <attribute name="context">{'default_product_id': product_id, 'show_locations_qty': True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='produce_line_ids']//field[@name='move_id']" position="attributes">
+                <attribute name="force_save">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="mrp_production_form_view" model="ir.ui.view">
+        <field name="name">mrp production</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <button name="open_produce_product" attrs="{'invisible': ['|', '|', '|', '|', ('is_locked', '=', False), ('check_to_done', '=', True), ('availability', 'not in', ['partially_available', 'assigned']), ('state', 'not in', ('confirmed','progress')), ('routing_id', '!=', False)]}" position="attributes">
+                <attribute name="context">{'location_src': location_src_id}</attribute>
+            </button>
+            <button name="open_produce_product" attrs="{'invisible': ['|', '|', '|', '|', ('is_locked', '=', False), ('check_to_done', '=', True), ('availability', '!=', 'waiting'), ('state', 'not in', ('confirmed','progress')), ('routing_id', '!=', False)]}" position="attributes">
+                <attribute name="context">{'location_src': location_src_id}</attribute>
+            </button>
+        </field>
+    </record>
+</odoo>

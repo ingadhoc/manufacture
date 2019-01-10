@@ -19,7 +19,7 @@
 ##############################################################################
 {
     'name': 'MRP Consume Restrict Lot',
-    'version': '9.0.0.0.0',
+    'version': '11.0.0.0.0',
     'category': 'Warehouse Management',
     'sequence': 14,
     'summary': '',
@@ -30,15 +30,13 @@
     ],
     'depends': [
         'mrp',
-        'stock_transfer_restrict_lot',
     ],
     'data': [
-        'view/mrp_production_view.xml',
-        'view/stock_move_consume_view.xml'
+        'views/mrp_production_views.xml',
     ],
     'demo': [
     ],
-    'installable': False,
+    'installable': True,
     'auto_install': False,
     'application': False,
 }

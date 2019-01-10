@@ -2,5 +2,5 @@
 # For copyright and license notices, see __manifest__.py file in module root
 # directory
 ##############################################################################
-from . import stock_move
+from . import stock_production_lot
 from . import mrp_production
