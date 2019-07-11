@@ -1,6 +1,6 @@
-[![Runbot Status](http://runbot.adhoc.com.ar/runbot/badge/flat/34/11.0.svg)](http://runbot.adhoc.com.ar/runbot/repo/github-com-ingadhoc-manufacture-34)
-[![Build Status](https://travis-ci.org/ingadhoc/manufacture.svg?branch=11.0)](https://travis-ci.org/ingadhoc/manufacture)
-[![Coverage Status](https://coveralls.io/repos/ingadhoc/manufacture/badge.png?branch=11.0)](https://coveralls.io/r/ingadhoc/manufacture?branch=11.0)
+[![Runbot Status](http://runbot.adhoc.com.ar/runbot/badge/flat/34/12.0.svg)](http://runbot.adhoc.com.ar/runbot/repo/github-com-ingadhoc-manufacture-34)
+[![Build Status](https://travis-ci.org/ingadhoc/manufacture.svg?branch=12.0)](https://travis-ci.org/ingadhoc/manufacture)
+[![Coverage Status](https://coveralls.io/repos/ingadhoc/manufacture/badge.png?branch=12.0)](https://coveralls.io/r/ingadhoc/manufacture?branch=12.0)
 [![Code Climate](https://codeclimate.com/github/ingadhoc/manufacture/badges/gpa.svg)](https://codeclimate.com/github/ingadhoc/manufacture)
 
 # ADHOC Manufacture
@@ -12,7 +12,7 @@ ADHOC Odoo Manufacture Modules
 
 Translation Status
 ------------------
-[![Transifex Status](https://www.transifex.com/projects/p/ingadhoc-manufacture-11-0/chart/image_png)](https://www.transifex.com/projects/p/ingadhoc-manufacture-11-0)
+[![Transifex Status](https://www.transifex.com/projects/p/ingadhoc-manufacture-12-0/chart/image_png)](https://www.transifex.com/projects/p/ingadhoc-manufacture-12-0)
 
 ----
 
